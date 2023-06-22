@@ -2,7 +2,6 @@ import styles from "./styles";
 import "./App.css";
 import BestChoice from "./components/Projects";
 import Hero from "./components/About";
-import Navbar from "./components/Navbar";
 import ExpertOpn from "./components/Testimonials";
 import Services from "./components/Services";
 import Calculate from "./components/Contact";

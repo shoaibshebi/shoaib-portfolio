@@ -1,26 +1,15 @@
 // @ts-nocheck
 import * as THREE from "three";
 import Stats from "three/addons/libs/stats.module.js";
-import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import "./ThreeDSection.css";
 import Navbar from "../Navbar";
 
 export default function ThreeDSection() {
   const containerRef = useRef(null);
-  // const Navbar = [
-  //   "Home",
-  //   "Demo",
-  //   "About",
-  //   "Services",
-  //   "Portfolio",
-  //   "Testimonial",
-  //   "Contact",
-  // ];
 
   useEffect(() => {
     let container = containerRef.current;
-    // let container = document.getElementById("my-screen");
     const SEPARATION = 100,
       AMOUNTX = 50,
       AMOUNTY = 50;
