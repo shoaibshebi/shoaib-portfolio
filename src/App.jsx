@@ -7,7 +7,7 @@ import Services from "./components/Services";
 import Calculate from "./components/Contact";
 import Footer from "./components/Footer";
 import DemoProjs from "./components/DemoProjs/DemoProjs";
-import ThreeDSection from "./components/ThreeDSection/ThreeDsection";
+import ThreeDSection from "./components/ThreeDSection/ThreeDSection";
 
 function App() {
   return (
