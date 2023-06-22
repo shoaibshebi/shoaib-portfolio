@@ -1,0 +1,107 @@
+.proj_container {
+  background: url("../../assets/Images/parallax.jpg") no-repeat 50% fixed;
+  background-size: cover;
+  height: 900px;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-perspective: 2500px;
+  perspective: 2500px;
+  -webkit-perspective-origin: 100% 50%;
+  perspective-origin: 100% 50%;
+}
+.wrap .girl {
+  border: 10px solid #fffefe;
+  margin-left: 0;
+  width: 450px;
+  height: 600px;
+  bottom: 0;
+  top: 10%;
+  position: absolute;
+}
+.wrap h1 {
+  left: -4.4%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #333;
+  font-size: 4em;
+  font-family: Raleway, sans-serif;
+  top: 25%;
+  position: absolute;
+}
+h1 {
+  margin: 0.67em 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333333;
+  line-height: 1.1;
+
+  text-transform: uppercase;
+}
+.wrap h1 span {
+  color: #000;
+  font-weight: 1000;
+}
+
+.wrap .list {
+  width: 88%;
+  height: 150vh;
+  overflow-x: hidden;
+  -webkit-transform: rotateX(35deg) rotateY(3deg) rotate(27deg);
+  transform: rotateX(35deg) rotateY(3deg) rotate(27deg);
+  margin: 0 0 0 112px;
+  padding: 91px 63px 511px 0;
+  scrollbar-width: none;
+}
+.proj_p {
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+p {
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+.wrap .list .item {
+  width: 80%;
+  height: 600px;
+  margin: 20px 20px 10px;
+  display: inline-block;
+  position: relative;
+}
+.wrap .list .item .img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 1px 1px 50px 0 #000;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  z-index: 10;
+  position: relative;
+}
+.wrap .list .item:after {
+  content: "";
+  position: absolute;
+  z-index: 150;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3960c8e1-d90e-4e60-8522-816b41b93892/d84vq6v-5985a860-c6c3-453c-a0ae-e80e5e5abf06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5NjBjOGUxLWQ5MGUtNGU2MC04NTIyLTgxNmI0MWI5Mzg5MlwvZDg0dnE2di01OTg1YTg2MC1jNmMzLTQ1M2MtYTBhZS1lODBlNWU1YWJmMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G2ljZtN3fPs4NhvF-fCGxl_97BA4w8kvt_qGyJH1RNI);
+  opacity: 0.1;
+}
