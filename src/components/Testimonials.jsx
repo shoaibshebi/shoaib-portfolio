@@ -9,11 +9,11 @@ import SlideShow from "../reusable/SlideShow";
 export default function Testimonials() {
   return (
     <motion.section
-      id="testimonials"
+      id='testimonials'
       variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.paddings} px-16 py-32 flex flex-row  gap-4 gap-y-8 relative h-[70vh] `}
     >
       <div className={`w-2/3 `}>
@@ -26,15 +26,15 @@ export default function Testimonials() {
         <motion.span
           animate={{ rotate: 360 }}
           transition={{ duration: 2, ease: "linear", repeat: Infinity }}
-          className="w-[50px] h-[50px]  flex justify-center items-center"
+          className='w-[50px] h-[50px]  flex justify-center items-center'
         >
           <FontAwesomeIcon
             icon={faAsterisk}
-            className="text-center font-noraml text-white text-[40px]"
+            className='text-center font-noraml text-white text-[40px]'
           />
         </motion.span>
-        <div class=" text-[100px] font-bold ml-2 ">
-          <h1 class=" leading-[90px] text-[#fff] ">What buyers say</h1>
+        <div class=' text-[100px] font-bold ml-2 '>
+          <h1 class=' leading-[90px] text-[#fff] '>What buyers say</h1>
         </div>
       </motion.div>
     </motion.section>

@@ -69,14 +69,14 @@ export default function Projects() {
   const ProjectTile = ({ name, link, img }) => (
     <motion.div
       variants={zoomIn(0.3, 1)}
-      className=" group/projectRoot
-       relative  h-full w-[650px] hover:cursor-pointer "
+      className=' group/projectRoot
+       relative  h-full w-[650px] hover:cursor-pointer '
       onClick={() => window.open(link, "_blank")}
     >
       <img
         src={img}
-        alt="Img1"
-        className=" absolute w-full h-full  rounded-[42px] object-cover z-0"
+        alt='Img1'
+        className=' absolute w-full h-full  rounded-[42px] object-cover z-0'
       />
       <div
         className={`${styles.flexCenter} absolute bottom-4 left-4  rounded-[30px] bg-[#0b111b] z-10 p-4 px-8  group-hover/projectRoot:bg-[#83D7E8] group-hover/projectRoot:text-[#0b111b] `}
@@ -88,28 +88,28 @@ export default function Projects() {
 
   return (
     <motion.section
-      id="projects"
+      id='projects'
       variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: true, amount: 0.25 }}
       className={`py-16 flex flex-col gap-4 gap-y-8 relative `}
     >
       <div
         className={`flex justify-around md:flex-row flex-col  h-[400px] px-16 gap-8`}
       >
         <ProjectTile
-          name="Glitter Bridge"
-          link="https://bridge.glitterfinance.org/"
+          name='Glitter Bridge'
+          link='https://bridge.glitterfinance.org/'
           img={Img1}
         />
         <ProjectTile
-          name="Glitter Bridge"
-          link="https://52a7d8ba.glitter-finance-bridge-frontend.pages.dev/"
+          name='Glitter Bridge'
+          link='https://52a7d8ba.glitter-finance-bridge-frontend.pages.dev/'
           img={Img24}
         />
 
-        <motion.div variants={zoomIn(0.1, 1)} className=" relative  h-full ">
+        <motion.div variants={zoomIn(0.1, 1)} className=' relative  h-full '>
           <CapsuleComp image={lifeTube} />
         </motion.div>
       </div>
@@ -117,13 +117,13 @@ export default function Projects() {
         {choiseImgs.map((item, i) => (
           <motion.div
             variants={zoomIn(0.3 * i, 1)}
-            className="group/project relative min-w-[170px] w-[480px] h-[300px] rounded-[42px] hover:cursor-pointer"
-            onClick={() => window.open(x.link, "_blank")}
+            className='group/project relative min-w-[170px] w-[480px] h-[300px] rounded-[42px] hover:cursor-pointer'
+            onClick={() => window.open(item.link, "_blank")}
           >
             <img
               src={item.img}
               alt={item.name}
-              className=" absolute w-full h-full  rounded-[42px] object-cover z-0"
+              className=' absolute w-full h-full  rounded-[42px] object-cover z-0'
             />
             <div
               className={`${styles.flexCenter} absolute bottom-4 left-4  rounded-[30px] bg-[#0b111b] group-hover/project:bg-[#83D7E8] group-hover/project:text-[#0b111b] z-10 p-4 px-8`}

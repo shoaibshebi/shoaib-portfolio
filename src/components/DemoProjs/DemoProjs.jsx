@@ -35,10 +35,10 @@ export default function DemoProjs() {
   const IterateProj = ({ arr, title }) => {
     return (
       <>
-        <p className="proj_p py-5 font-bold">{title}</p>
-        {arr?.map((item) => (
-          <div className="item" key={item}>
-            <img src={item} alt="img" className="img" />
+        <p className='proj_p py-5 font-bold'>{title}</p>
+        {arr?.map(item => (
+          <div className='item' key={item}>
+            <img src={item} alt='img' className='img' />
           </div>
         ))}
       </>
@@ -48,35 +48,35 @@ export default function DemoProjs() {
   return (
     <>
       <motion.div
-        id="demo"
+        id='demo'
         variants={fadeIn("rt", "spring", 0.2, 2)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
         className={` mx-10 mt-16 proj_container rounded-[30px]`}
       >
-        <div className="wrap rounded-[30px]">
-          <div className="girl"></div>
-          <h1 className="text-[#0b111b] font-bold">
+        <div className='wrap rounded-[30px]'>
+          <div className='girl'></div>
+          <h1 className='text-[#0b111b] font-bold'>
             Projects' Demo<span>.</span>
           </h1>
-          <div className="list">
+          <div className='list'>
             <IterateProj
               arr={glitterBridge || []}
-              title="Glitter Bridge Protocol"
+              title='Glitter Bridge Protocol'
             />
             <IterateProj
               arr={glitterBridgeWidget || []}
-              title="Glitter Bridge Widget"
+              title='Glitter Bridge Widget'
             />
             <IterateProj
               arr={glitterBridgeExplorer || []}
-              title="Glitter Bridge Explorer"
+              title='Glitter Bridge Explorer'
             />
-            <IterateProj arr={obg || []} title="OBG | Online Battle Ground" />
+            <IterateProj arr={obg || []} title='OBG | Online Battle Ground' />
             <IterateProj
               arr={glitterBridgeFund || []}
-              title="Glitter Bridge Fund"
+              title='Glitter Bridge Fund'
             />
           </div>
         </div>
